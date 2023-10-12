@@ -9,7 +9,7 @@
 /* stili main */
 h1{
     color: #e4306f;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -19,7 +19,8 @@ h1{
 }
 
 #info{
-    margin: 30px 20px;
+    margin: 30px 0;
+    text-align: center;
 }
 
 .row{
@@ -39,4 +40,32 @@ h1{
     margin: 0 20px;
     float: left;
     background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    box-shadow: 5px 2px 4px #444343b5;
+}
+
+.photo{
+    width: calc(100%/3);
+    margin-right: 10px;
+    float: left;
+}
+
+.photo::after{
+    content: "";
+    display: table;
+    clear: left;
+}
+
+.person{
+    color: white;
+    margin: 5px 0 0 0;
+    line-height: 25px;
+}
+
+.occupation, .mail{
+    font-size: 12px;
+}
+
+.mail{
+    color: #3c9bd2;
 }
